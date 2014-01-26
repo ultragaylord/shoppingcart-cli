@@ -1,0 +1,4 @@
+Banana	9	10.00
+Apples	10	20.00
+Talong	6	8.00
+Guava	5	5.50
