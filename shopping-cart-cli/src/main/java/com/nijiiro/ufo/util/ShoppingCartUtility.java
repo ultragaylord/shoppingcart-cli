@@ -52,6 +52,8 @@ public class ShoppingCartUtility {
 	 */
 	public void buildProductTable(StringBuilder productBuilder){
 		//Puts a table header.
+		productBuilder.append(AppConstants.PRODUCT_TABLE_TITLE.getValue());
+		productBuilder.append(AppConstants.NEWLINE.getValue());
 		buildProductTableHeader(productBuilder);
 		
 		for(Product product: productList){
@@ -95,6 +97,8 @@ public class ShoppingCartUtility {
 	 */
 	public void buildShoppingCartTable(StringBuilder cartBuilder) {
 		ShoppingCart cart = new ShoppingCart();
+		cartBuilder.append(AppConstants.CART_TABLE_TITLE.getValue());
+		cartBuilder.append(AppConstants.NEWLINE.getValue());
 		buildProductTableHeader(cartBuilder);
 		
 		for(Product product: productList){
